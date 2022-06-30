@@ -99,19 +99,31 @@ public class Code05_MinHeight {
 	}
 
 	public static void main(String[] args) {
-		int treeLevel = 7;
-		int nodeMaxValue = 5;
-		int testTimes = 100000;
-		System.out.println("test begin");
-		for (int i = 0; i < testTimes; i++) {
-			Node head = generateRandomBST(treeLevel, nodeMaxValue);
-			int ans1 = minHeight1(head);
-			int ans2 = minHeight2(head);
-			if (ans1 != ans2) {
-				System.out.println("Oops!");
-			}
-		}
-		System.out.println("test finish!");
+		Node node = new Node(1);
+        node.left = new Node(2);
+        node.right = new Node(3);
+        node.left.left = new Node(4);
+        node.left.right = new Node(5);
+        node.right.left = new Node(6);
+        node.right.right = new Node(7);
+
+		node.left.right.left = new Node(8);
+		node.right.left.right = new Node(9);
+		System.out.println(minHeight2(node));
+
+//		int treeLevel = 7;
+//		int nodeMaxValue = 5;
+//		int testTimes = 100000;
+//		System.out.println("test begin");
+//		for (int i = 0; i < testTimes; i++) {
+//			Node head = generateRandomBST(treeLevel, nodeMaxValue);
+//			int ans1 = minHeight1(head);
+//			int ans2 = minHeight2(head);
+//			if (ans1 != ans2) {
+//				System.out.println("Oops!");
+//			}
+//		}
+//		System.out.println("test finish!");
 
 	}
 

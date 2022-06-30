@@ -12,6 +12,15 @@ public class Code02_TreeEqual {
 		public Node(int v) {
 			value = v;
 		}
+
+		@Override
+		public String toString() {
+			return "Node{" +
+					"value=" + value +
+					", left=" + left +
+					", right=" + right +
+					'}';
+		}
 	}
 
 	public static boolean containsTree1(Node big, Node small) {
