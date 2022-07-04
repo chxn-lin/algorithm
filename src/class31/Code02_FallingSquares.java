@@ -106,4 +106,13 @@ public class Code02_FallingSquares {
 		return res;
 	}
 
+	public static void main(String[] args) {
+		int[][] arr = {
+				{1,2},
+				{2,3},
+				{6,1}
+		};
+		new Code02_FallingSquares().fallingSquares(arr);
+	}
+
 }

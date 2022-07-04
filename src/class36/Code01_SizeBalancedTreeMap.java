@@ -17,7 +17,7 @@ public class Code01_SizeBalancedTreeMap {
 	}
 
 	public static class SizeBalancedTreeMap<K extends Comparable<K>, V> {
-		private SBTNode<K, V> root;
+		public SBTNode<K, V> root;
 
 		private SBTNode<K, V> rightRotate(SBTNode<K, V> cur) {
 			SBTNode<K, V> leftNode = cur.l;
