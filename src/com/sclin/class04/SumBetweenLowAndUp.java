@@ -13,7 +13,7 @@ public class SumBetweenLowAndUp {
 
     }
 
-    private static int myCountRangeSum(int[] arr, int low, int upper) {
+    public static int myCountRangeSum(int[] arr, int low, int upper) {
         if (arr == null || arr.length < 1) {
             return 0;
         }
