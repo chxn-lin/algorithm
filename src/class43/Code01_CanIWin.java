@@ -13,7 +13,7 @@ public class Code01_CanIWin {
 		if ((choose * (choose + 1) >> 1) < total) {
 			return false;
 		}
-		int[] arr = new int[choose];
+		int[] arr = new int[choose + 1];
 		for (int i = 0; i < choose; i++) {
 			arr[i] = i + 1;
 		}
