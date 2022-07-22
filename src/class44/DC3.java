@@ -1,5 +1,9 @@
 package class44;
 
+import class45.Code01_InsertS2MakeMostAlphabeticalOrder;
+
+import static com.sclin.class01.KM1.printArr;
+
 public class DC3 {
 
 	public int[] sa;
@@ -158,9 +162,19 @@ public class DC3 {
 	// 为了测试
 	public static void main(String[] args) {
 		int len = 100000;
-		int maxValue = 100;
+		int maxValue = 15;
+		String str = "mississippi";
+		int[] arr = {9, 5, 15, 15, 5, 15, 15, 5, 12, 12, 5};
+		// 			 m  i   s   s  i   s   s  i   p   p  i
+
 		long start = System.currentTimeMillis();
-		new DC3(randomArray(len, maxValue), maxValue);
+		DC3 dc3 = new DC3(arr, maxValue);
+//		Code01_InsertS2MakeMostAlphabeticalOrder.DC3 dc3 =
+//				new Code01_InsertS2MakeMostAlphabeticalOrder.DC3(arr, maxValue);
+		printArr(dc3.sa);
+		printArr(dc3.rank);
+		printArr(dc3.height);
+
 		long end = System.currentTimeMillis();
 		System.out.println("数据量 " + len + ", 运行时间 " + (end - start) + " ms");
 	}
