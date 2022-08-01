@@ -63,6 +63,7 @@ public class Code03_DinicAlgorithm {
 		}
 
 		private boolean bfs(int s, int t) {
+//			depth[s] = 0;// 初始化就是这个，所以省略
 			LinkedList<Integer> queue = new LinkedList<>();
 			queue.addFirst(s);
 			boolean[] visited = new boolean[N];
